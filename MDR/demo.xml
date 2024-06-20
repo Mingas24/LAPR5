@@ -1,0 +1,317 @@
+<GlDocumentInfo>
+    <world version="1.0.5">
+        <GlDocument key="GlDocument:1">
+            <GlDocumentNetwork>
+                <Network key="Network:1">
+                    <VehicleTypes>
+                        <VehicleType key="VehicleType:1" Name="Autocarro" Autonomy="500000" Cost="10" AverageSpeed="30" EnergySource="23" Consumption="30" Emissions="1050">
+                            <ParametersValues/>
+                            <Vehicles/>
+                        </VehicleType>
+                        <VehicleType key="VehicleType:2" Name="MiniAutocarro" Autonomy="600000" Cost="5" AverageSpeed="32" EnergySource="23" Consumption="18" Emissions="700">
+                            <ParametersValues/>
+                            <Vehicles/>
+                        </VehicleType>
+                    </VehicleTypes>
+                    <Lines>
+                        <Line key="Line:1" Name="Paredes_Aguiar" Color="RGB(38,91,11)">
+                            <LinePaths>
+                                <LinePath key="LinePath:1" Path="Path:1" Orientation="Return"/>
+                                <LinePath key="LinePath:2" Path="Path:3" Orientation="Go"/>
+                            </LinePaths>
+                            <AllowedVehicles/>
+                            <DeniedVehicles/>
+                            <AllowedDrivers/>
+                            <DeniedDrivers/>
+                        </Line>
+                        <Line key="Line:2" Name="Paredes_Gandra" Color="RGB(49,23,59)">
+                            <LinePaths>
+                                <LinePath key="LinePath:3" Path="Path:5" Orientation="Return"/>
+                                <LinePath key="LinePath:4" Path="Path:8" Orientation="Go"/>
+                            </LinePaths>
+                            <AllowedVehicles/>
+                            <DeniedVehicles/>
+                            <AllowedDrivers/>
+                            <DeniedDrivers/>
+                        </Line>
+                        <Line key="Line:3" Name="Paredes_Lordelo" Color="RGB(4,204,225)">
+                            <LinePaths>
+                                <LinePath key="LinePath:5" Path="Path:9" Orientation="Return"/>
+                                <LinePath key="LinePath:6" Path="Path:11" Orientation="Go"/>
+                            </LinePaths>
+                            <AllowedVehicles/>
+                            <DeniedVehicles/>
+                            <AllowedDrivers/>
+                            <DeniedDrivers/>
+                        </Line>
+                        <Line key="Line:4" Name="Lordelo_Parada" Color="RGB(183,248,71)">
+                            <LinePaths>
+                                <LinePath key="LinePath:7" Path="Path:13" Orientation="Go"/>
+                                <LinePath key="LinePath:8" Path="Path:18" Orientation="Return"/>
+                                <LinePath key="LinePath:9" Path="Path:24" Orientation="Go"/>
+                                <LinePath key="LinePath:10" Path="Path:26" Orientation="Return"/>
+                            </LinePaths>
+                            <AllowedVehicles/>
+                            <DeniedVehicles/>
+                            <AllowedDrivers/>
+                            <DeniedDrivers/>
+                        </Line>
+                        <Line key="Line:5" Name="Sobrosa_Cete" Color="RGB(152,16,147)">
+                            <LinePaths>
+                                <LinePath key="LinePath:12" Path="Path:22" Orientation="Go"/>
+                                <LinePath key="LinePath:13" Path="Path:20" Orientation="Return"/>
+                            </LinePaths>
+                            <AllowedVehicles/>
+                            <DeniedVehicles/>
+                            <AllowedDrivers/>
+                            <DeniedDrivers/>
+                        </Line>
+                    </Lines>
+                    <Paths>
+                        <Path key="Path:1" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:1" Node="Node:1"/>
+                                <PathNode key="PathNode:2" Node="Node:15" Duration="600" Distance="5000"/>
+                                <PathNode key="PathNode:3" Node="Node:13" Duration="360" Distance="3200"/>
+                                <PathNode key="PathNode:4" Node="Node:4" Duration="360" Distance="3000"/>
+                                <PathNode key="PathNode:5" Node="Node:14" Duration="540" Distance="4500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:3" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:11" Node="Node:14"/>
+                                <PathNode key="PathNode:12" Node="Node:4" Duration="540" Distance="4500"/>
+                                <PathNode key="PathNode:13" Node="Node:13" Duration="360" Distance="3000"/>
+                                <PathNode key="PathNode:14" Node="Node:15" Duration="360" Distance="3200"/>
+                                <PathNode key="PathNode:15" Node="Node:1" Duration="600" Distance="5000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:37" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:149" Node="Node:16"/>
+                                <PathNode key="PathNode:150" Node="Node:7" Duration="300" Distance="1800"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:5" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:21" Node="Node:10"/>
+                                <PathNode key="PathNode:22" Node="Node:18" Duration="600" Distance="5000"/>
+                                <PathNode key="PathNode:23" Node="Node:2" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:24" Node="Node:12" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:25" Node="Node:14" Duration="480" Distance="4000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:8" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:36" Node="Node:14"/>
+                                <PathNode key="PathNode:37" Node="Node:12" Duration="480" Distance="4000"/>
+                                <PathNode key="PathNode:38" Node="Node:2" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:39" Node="Node:18" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:40" Node="Node:10" Duration="600" Distance="5000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:9" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:41" Node="Node:11"/>
+                                <PathNode key="PathNode:42" Node="Node:18" Duration="780" Distance="6300"/>
+                                <PathNode key="PathNode:43" Node="Node:2" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:44" Node="Node:12" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:45" Node="Node:14" Duration="480" Distance="4000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:11" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:51" Node="Node:14"/>
+                                <PathNode key="PathNode:52" Node="Node:12" Duration="480" Distance="4000"/>
+                                <PathNode key="PathNode:53" Node="Node:2" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:54" Node="Node:18" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:55" Node="Node:11" Duration="780" Distance="6300"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:13" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:61" Node="Node:2"/>
+                                <PathNode key="PathNode:62" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:69" Node="Node:5" Duration="240" Distance="2000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:18" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:73" Node="Node:5"/>
+                                <PathNode key="PathNode:74" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:75" Node="Node:2" Duration="240" Distance="2000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:20" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:79" Node="Node:4"/>
+                                <PathNode key="PathNode:80" Node="Node:12" Duration="300" Distance="2500"/>
+                                <PathNode key="PathNode:81" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:82" Node="Node:3" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:83" Node="Node:5" Duration="360" Distance="3000"/>
+                                <PathNode key="PathNode:84" Node="Node:16" Duration="240" Distance="2000"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:36" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:147" Node="Node:7"/>
+                                <PathNode key="PathNode:148" Node="Node:16" Duration="300" Distance="1500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:22" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:91" Node="Node:16"/>
+                                <PathNode key="PathNode:92" Node="Node:5" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:93" Node="Node:3" Duration="360" Distance="3000"/>
+                                <PathNode key="PathNode:94" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:95" Node="Node:12" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:96" Node="Node:4" Duration="300" Distance="2500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:24" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:103" Node="Node:11"/>
+                                <PathNode key="PathNode:104" Node="Node:6" Duration="300" Distance="2500"/>
+                                <PathNode key="PathNode:105" Node="Node:5" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:106" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:107" Node="Node:2" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:108" Node="Node:13" Duration="300" Distance="2500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:26" IsEmpty="False">
+                            <PathNodes>
+                                <PathNode key="PathNode:115" Node="Node:13"/>
+                                <PathNode key="PathNode:116" Node="Node:2" Duration="300" Distance="2500"/>
+                                <PathNode key="PathNode:117" Node="Node:20" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:118" Node="Node:5" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:119" Node="Node:6" Duration="240" Distance="2000"/>
+                                <PathNode key="PathNode:120" Node="Node:11" Duration="300" Distance="2500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:38" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:151" Node="Node:9"/>
+                                <PathNode key="PathNode:152" Node="Node:14" Duration="120" Distance="1500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:39" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:153" Node="Node:14"/>
+                                <PathNode key="PathNode:154" Node="Node:9" Duration="120" Distance="1500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:34" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:143" Node="Node:7"/>
+                                <PathNode key="PathNode:144" Node="Node:11" Duration="120" Distance="1500"/>
+                            </PathNodes>
+                        </Path>
+                        <Path key="Path:35" IsEmpty="True">
+                            <PathNodes>
+                                <PathNode key="PathNode:145" Node="Node:11"/>
+                                <PathNode key="PathNode:146" Node="Node:7" Duration="120" Distance="1500"/>
+                            </PathNodes>
+                        </Path>
+                    </Paths>
+                    <Nodes>
+                        <Node key="Node:1" Name="Aguiar de Sousa" Latitude="41.1293363229325" Longitude="-8.4464785432391" ShortName="AGUIA" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:2" Name="Baltar" Latitude="41.1937898023744" Longitude="-8.38716802227697" ShortName="BALTR" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:3" Name="Besteiros" Latitude="41.217018845589" Longitude="-8.34043029659082" ShortName="BESTR" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:4" Name="Cete" Latitude="41.183243425797" Longitude="-8.35164059584564" ShortName="CETE" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:5" Name="Cristelo" Latitude="41.2207801252676" Longitude="-8.34639896125324" ShortName="CRIST" IsDepot="False" IsReliefPoint="True">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:6" Name="Duas Igrejas" Latitude="41.2278665802794" Longitude="-8.35481024956726" ShortName="DIGRJ" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:7" Name="Estação (Lordelo)" Latitude="41.2521157104055" Longitude="-8.4227924957086" ShortName="ESTLO" IsDepot="True" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes>
+                                <CrewTravelTime key="CrewTravelTime:2" Node="Node:7" Duration="1620"/>
+                            </CrewTravelTimes>
+                        </Node>
+                        <Node key="Node:9" Name="Estação (Paredes)" Latitude="41.2082119860192" Longitude="-8.33448520831829" ShortName="ESTPA" IsDepot="True" IsReliefPoint="True">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes>
+                                <CrewTravelTime key="CrewTravelTime:6" Node="Node:9" Duration="1620"/>
+                            </CrewTravelTimes>
+                        </Node>
+                        <Node key="Node:10" Name="Gandra" Latitude="41.1956579348384" Longitude="-8.43958765792976" ShortName="GAND" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:11" Name="Lordelo" Latitude="41.2452627470645" Longitude="-8.42293614720057" ShortName="LORDL" IsDepot="False" IsReliefPoint="True">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes>
+                                <CrewTravelTime key="CrewTravelTime:10" Node="Node:11" Duration="300"/>
+                            </CrewTravelTimes>
+                        </Node>
+                        <Node key="Node:12" Name="Mouriz" Latitude="41.1983610215263" Longitude="-8.36577272258403" ShortName="MOURZ" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:13" Name="Parada de Todeia" Latitude="41.1765780321068" Longitude="-8.37023578802149" ShortName="PARAD" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:14" Name="Paredes" Latitude="41.2062947118362" Longitude="-8.33566951069481" ShortName="PARED" IsDepot="False" IsReliefPoint="True">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes>
+                                <CrewTravelTime key="CrewTravelTime:14" Node="Node:14" Duration="1500"/>
+                            </CrewTravelTimes>
+                        </Node>
+                        <Node key="Node:15" Name="Recarei" Latitude="41.1599363478137" Longitude="-8.42215867462191" ShortName="RECAR" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:16" Name="Sobrosa" Latitude="41.2557331783506" Longitude="-8.38118071581788" ShortName="SOBRO" IsDepot="False" IsReliefPoint="True">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes>
+                                <CrewTravelTime key="CrewTravelTime:18" Node="Node:16" Duration="900"/>
+                            </CrewTravelTimes>
+                        </Node>
+                        <Node key="Node:18" Name="Vandoma" Latitude="41.2328015719913" Longitude="-8.34160692293342" ShortName="VANDO" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                        <Node key="Node:20" Name="Vila Cova de Carros" Latitude="41.2090666564063" Longitude="-8.35109395257277" ShortName="VCCAR" IsDepot="False" IsReliefPoint="False">
+                            <Capacities/>
+                            <InformationPoints/>
+                            <CrewTravelTimes/>
+                        </Node>
+                    </Nodes>
+                </Network>
+            </GlDocumentNetwork>
+        </GlDocument>
+    </world>
+</GlDocumentInfo>

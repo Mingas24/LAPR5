@@ -1,0 +1,61 @@
+/* 
+form {
+  border: thin solid red;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+}
+ 
+.formtext {
+  position: relative;
+  top: -48px;
+  background: white;
+  padding: 7px;
+  width: 57px;
+  color: red;
+} */
+
+.appNav{
+  resize: none;
+  height: 100%;
+  width: 100%;
+}
+.appNav .Logo .ISEP_image{
+  position: absolute;
+  display: block;
+  /* margin-right:200%; */
+  width: 10%;
+}
+
+.appNav .Logo .Paredes_image{
+  position: absolute;
+  display: block;
+  margin-left:12%;
+  top: 2%;
+  width: 3.5%;
+}
+
+.wrapper {
+  padding: 5px 20px;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
+}
+
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}

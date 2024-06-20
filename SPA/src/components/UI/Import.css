@@ -1,0 +1,74 @@
+label {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.divCreate {
+    text-align: left;
+    margin: 0 auto;
+    width: 20%;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #303b3f;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #303b3f;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup {
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.Modal {
+    width: 50%;
+    margin: 20vh auto;
+    height: 10%;
+    /* Full height /
+    overflow: auto; / Enable scroll if needed /
+    background-color: rgb(0,0,0); / Fallback color /
+    background-color: rgba(0,0,0,0.4); / Black w/ opacity */
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+image: node:10.15.3
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Create artifact
+          script:
+            - git archive --format=tar.gz master:MDR -o                   mdr.tar.gz
+          artifacts:
+            - mdr.tar.gz
+      - step:
+          name: Deploy to heroku
+          deployment: production
+          caches:
+            - node
+          script:
+            - pipe: atlassian/heroku-deploy:1.1.4
+              variables:
+                HEROKU_API_KEY: $HEROKU_API_KEY
+                HEROKU_APP_NAME: $HEROKU_APP_NAME
+                ZIP_FILE: "mdr.tar.gz"
+                WAIT: "true"
+      # - step:
+      #     name: Deploy MDV to Azure Web App
+      #     script:
+      #       - cd MDV
+      #       - apt-get update && apt-get install ncftp
+      #       - chmod +x ./DeployAzure.bash
+      #       - ./DeployAzure.bash
+      #     condition:
+      #       changesets:
+      #         includePaths:
+      #           - "MDV/*"
+      #           - "MDV/**"

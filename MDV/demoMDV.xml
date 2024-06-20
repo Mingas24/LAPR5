@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GlDocumentInfo xmlns:opt="Opt.GL.Domain"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="Opt.GL.BusinessLogic">
+    <world version="1.0.5">
+        <GlDocument key="GlDocument:1">
+            <GlDocumentSchedule>
+                <Schedule key="Schedule:1">
+                    <Trips>
+                        <Trip TripCode="T9090" LineID="2" PathID="8" PathIDReturn="5" StartDate="11-11-2021" StartTime="10:00">
+                            <Nodes>
+                                <Node Node="Paredes" PassingTime="36000"/>
+                                <Node Node="Mouriz" PassingTime="36480"/>
+                                <Node Node="Baltar" PassingTime="36720"/>
+                                <Node Node="Vandoma" PassingTime="36960"/>
+                                <Node Node="Gandra" PassingTime="37560"/>
+                            </Nodes>
+                        </Trip>
+                        <Trip TripCode="T9095" LineID="5" PathID="22" PathIDReturn="20" StartDate="11-11-2021" StartTime="10:30">
+                            <Nodes>
+                                <Node Node="Cete" PassingTime="37800"/>
+                                <Node Node="Mouriz" PassingTime="38100"/>
+                                <Node Node="Vila Cova de Carros" PassingTime="38340"/>
+                                <Node Node="Besteiros" PassingTime="38580"/>
+                                <Node Node="Cristelo" PassingTime="38940"/>
+                                <Node Node="Sobrosa" PassingTime="39180"/>
+                            </Nodes>
+                        </Trip>
+                        <Trip TripCode="T9098" LineID="3" PathID="11" PathIDReturn="9" StartDate="13-11-2021" StartTime="10:00">
+                            <Nodes>
+                                <Node Node="Paredes" PassingTime="36000"/>
+                                <Node Node="Mouriz" PassingTime="36480"/>
+                                <Node Node="Baltar" PassingTime="36720"/>
+                                <Node Node="Vandoma" PassingTime="36960"/>
+                                <Node Node="Lordelo" PassingTime="37740"/>
+                            </Nodes>
+                        </Trip>
+                         <Trip TripCode="T9096" LineID="3" PathID="13" PathIDReturn="18" StartDate="13-11-2021" StartTime="10:30">
+                            <Nodes>
+                                <Node Node="Baltar" PassingTime="37800"/>
+                                <Node Node="Vila Cova de Carros" PassingTime="38040"/>
+                                <Node Node="Cristelo" PassingTime="38280"/>
+                            </Nodes>
+                        </Trip>
+                    </Trips>
+                    <Workblocks>
+                        <Workblock StartTime="11-11-2021 10:00" EndTime="11-11-2021 11:00" Code="WB9001">
+                            <Trips>
+                                <TripWB TripCode="T9090"/>
+                                <TripWB TripCode="T9095"/>
+                            </Trips>
+                        </Workblock>
+                        <Workblock StartTime="13-11-2021 10:00" EndTime="13-11-2021 10:30" Code="WB9002">
+                            <Trips>
+                                <TripWB TripCode="T9098"/>
+                            </Trips>
+                        </Workblock>
+                         <Workblock StartTime="13-11-2021 10:30" EndTime="13-11-2021 11:00" Code="WB9003">
+                            <Trips>
+                                <TripWB TripCode="T9096"/>
+                            </Trips>
+                        </Workblock>
+                    </Workblocks>
+                    <VehicleServices>
+                        <VehicleService VehicleServiceName="VS13" VehicleServiceCode="VSCode8000" VehicleServiceColor="RGB(38,91,11)">
+                            <Workblocks>
+                                <WorkblockVS Code="WB9001"/>
+                            </Workblocks>
+                        </VehicleService>
+                        <VehicleService VehicleServiceName="VS15" VehicleServiceCode="VSCode9000" VehicleServiceColor="RGB(4,204,225)">
+                             <Workblocks>
+                                <WorkblockVS Code="WB9002"/>
+                                <WorkblockVS Code="WB9003"/>
+                            </Workblocks>
+                        </VehicleService>
+                    </VehicleServices>
+                    <CrewServices>
+                        <CrewService CrewServiceCode="C9890">
+                           <Workblocks>
+                                <WorkblockCS Code="WB9001"/>
+                            </Workblocks>
+                        </CrewService>
+                        <CrewService CrewServiceCode="C9880">
+                           <Workblocks>
+                                <WorkblockCS Code="WB9002"/>
+                                <WorkblockCS Code="WB9003"/>
+                            </Workblocks>
+                        </CrewService>
+                    </CrewServices>
+                </Schedule>
+            </GlDocumentSchedule>
+        </GlDocument>
+    </world>
+    <GlGlobalParameters xmlns:d1p1="http://schemas.datacontract.org/2004/07/Opt.GL.Domain">
+        <d1p1:CriterionToAddTripsToVehicleDuty>0</d1p1:CriterionToAddTripsToVehicleDuty>
+        <d1p1:MaxIntervalTimeBetweenTrips>3600</d1p1:MaxIntervalTimeBetweenTrips>
+        <d1p1:OverlapTime>0</d1p1:OverlapTime>
+    </GlGlobalParameters>
+</GlDocumentInfo>
